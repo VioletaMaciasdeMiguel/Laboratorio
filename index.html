@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="estilo.css">
+<title>Formulario de registro SCIII</title>
+<link href="estilos.css" rel="stylesheet" type="text/css">
+<script src="script.js"></script>
+</head>
+
+<body>
+<div class="group">
+<div class="div_secundario">
+    <form method="POST" id="form" action="formulario.php">
+    <div class="div_secundario">
+    <h2><em>Formulario de Registro</em></h2>
+        <label for="nombre" class="label_secundario">Nombre<span><em>(requerido)</em></span></label><br>
+        <input type="text" id="nombre" class="input_secundario" name="nombre" class="form-input" required/><br>
+        </div>
+        <div class="div_secundario">
+        <label for="primer_apellido" class="label_secundario">Primer apellido<span><em>(requerido)</em></span></label><br>
+        <input type="text" id="primer_apellido" class="input_secundario" name="primer_apellido" class="form-input" required/><br>
+        </div>
+        <div class="div_secundario">
+        <label for="segundo_apellido" class="label_secundario">Segundo apellido<span><em>(requerido)</em></span></label><br>
+        <input type="text" id="segundo_apellido" class="input_secundario" name="segundo_apellido" class="form-input" required/><br>
+        </div>
+        <div class="div_secundario">
+        <label for="email" class="label_secundario">Email<span><em>(requerido)</em></span></label><br>
+        <input type="email" id="email" class="input_secundario" name="email" class="form-input" required/><br>
+        </div>
+        <div class="div_secundario">
+        <label for="login" class="label_secundario">Login<span><em>(requerido)</em></span></label><br>
+        <input type="text" id="login" class="input_secundario" name="login" class="form-input" required/><br>
+        </div>
+        <div class="div_secundario">
+        <label for="password" class="label_secundario">Password<span><em>(requerido)</em></span></label><br>
+        <input type="password" id="password" class="input_secundario" name="password" class="form-input" required/><br>
+        </div>
+        <div class="div_secundario">
+    <input class="form-btn" name="submit" id="button" type="submit" value="Suscribirse" onclick="return todo_ok()"/>
+    <input method="POST" action="tabla_usuarios.php" class="form-btn" name="submit" id="button2" type="submit" value="Consultar"/>
+        </div>
+        </div>
+    </form>
+    
+</div>
+</body>
+</html>
